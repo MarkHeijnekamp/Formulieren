@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <link rel="shortcut icon" href="images/from_icon.png">
+  <link rel="stylesheet" href="css/form.css">
+  <meta name="theme-color" content="#fffff">
+  <meta charset="utf-8">
+  <title>form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <main>
+    <form id="form-contact" class="form-contact" action="http://bla.hosts.ma-cloud.nl/pop.php" method="get" name="my-form" autocomplete="on" enctype="text/plain">
+      <div class="form-item-row">
+        <div class="form-item">
+          <label class="label" for="firstname">voornaam
+          <input  id="firstname" class="forename" type="text" name="firstname" placeholder="joe" value="" required maxlength="130"></label>
+        </div>
+      <div class="form-item">
+        <label class="label" for="lastname">achternaam
+          <input  id="lastname" class="aftername" type="text" name="lastname" placeholder="doe" value="" required maxlength="130"></label>
+      </div>
+      </div>
+      <div class="form-item-row">
+        <div class="address-main">
+          <div class="form-item">
+            <label class="label" for="address">adres
+            <input id="address" class="adres" type="text" name="address" placeholder="straat naam" value="" required maxlength="130"></label>
+          </div>
+        <div class="form-item">
+          <label class="label" for="zipcode">postcode
+              <input id="zipcode" type="text" class="adres" name="zipcode" placeholder="1234AB" value="" required maxlength="130"></label>
+        </div>
+      <div class="form-item">
+        <label class="country" for="country">land
+              <input id="country" class="adres" type="text" name="country" placeholder="nederland" value="" required maxlength="130"></label>
+      </div>
+      <div class="form-item">
+        <label class="state" for="state">provincie
+              <input id="state" class="adres" type="text" name="state" placeholder="Flevoland" value="" required maxlength="130"></label>
+      </div>
+      </div>
+      </div>
+
+      <div class="form-item" id="gender-radio">
+        <label class="label" id="gender-label" >geslacht</label>
+<div class=" radios-wrap">
+          <p>
+     <input type="radio" id="test1" name="radio-group" value="man">
+     <label for="test1">man</label>
+        </p>
+        <p>
+          <input type="radio" id="test2" name="radio-group" value="woman">
+          <label for="test2">vrouw</label>
+        </p>
+      </div>
+      </div>
+      <div class="form-item-row">
+        <div class="form-item">
+          <label class="label" for="phone">telefoon
+            <!-- <input id="phone" class="phone-input" maxlength="10" type="text" name="telephone" placeholder="0612345678" min=9 value="" required pattern="[0-90-9]{10}"></label> -->
+            <input id="phone" type="number" class="phone-input" name="telephone" value="" maxlength="10" minlength="9" required placeholder="0612345678" ></label>
+        </div>
+        <div class="form-item">
+          <label class="label" for="favorite">welke kiest u eerder
+          <select id="favorite" name="favorite" required>
+        <option disabled value="" selected="selected">maak een keuze</option>
+        <option value="car">auto</option>
+        <option value="vacation">vakantie</option>
+        <option value="monney">geld</option>
+        <option value="family">familie</option>
+        <option value="love">liefde</option>
+        <option value="fun stuff">leuke dingen doen</option>
+        <option value="sun rise">zie de zon op komen</option>
+        <option value="getting enemy's">vijanden krijgen</option>
+      </select>
+      </label>
+          </div>
+          <div class="form-item-row">
+      <div class="form-item" id="from-item-textarea">
+        <label id="textarea" for="about">vertel kort iets over uw zelf
+          <textarea name="about" id="about" rows="8" cols="80" placeholder="vertel kort iets over uw zelf" maxlength="5000"></textarea>
+        </label>
+      </div>
+    </div>
+      <div class="checkboxes">
+        <label class="label" for="checkboxes">I accept the terms and conditions</label>
+        <input type="checkbox" id="checkboxes" name="" value="">
+      </div>
+      </div>
+      <div class="submit-button">
+        <input class="submit-button-button" type="submit" value="Submit" />
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
