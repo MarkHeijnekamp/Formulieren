@@ -601,9 +601,29 @@ background-repeat: no-repeat;*/
     height: 0px;
     height: 71px;
     width: 100%;
-    float: left;
+    float: left;}
+    /* .checkboxes input{
+    margin-left: 50%; made by mark heijnekamp
+    margin-right: auto;
 
-}
+} */
 #textarea{
       height: 150px;
+}
+footer{
+  background-color: #344;
+  margin-top: 150px;
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 80%;
+  height: 40px;
+  float: left;
+  padding: 3% 10% 4% 10%;}
+footer h5{
+  float: right;
+
+}
+body{
+  margin: 0
 }

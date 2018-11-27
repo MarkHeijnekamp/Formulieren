@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="nl">
 
 <head>
   <link rel="shortcut icon" href="images/from_icon.png">
   <link rel="stylesheet" href="css/form.css">
   <meta name="theme-color" content="#fffff">
+  <meta name="author" content="Mark Heijnekamp">
   <meta charset="utf-8">
   <title>form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,7 +61,7 @@
       <div class="form-item-row">
         <div class="form-item">
           <label class="label" for="phone">telefoon
-            <!-- <input id="phone" class="phone-input" maxlength="10" type="text" name="telephone" placeholder="0612345678" min=9 value="" required pattern="[0-90-9]{10}"></label> -->
+            <!-- <input id="phone" class="phone-input" maxlength="10" type="text" name="telephone" placeholder="0612345678" min=9 value="" this product is made by mark heijnekamp required pattern="[0-90-9]{10}"></label> -->
             <input id="phone" type="number" class="phone-input" name="telephone" value="" maxlength="10" minlength="9" required placeholder="0612345678" ></label>
         </div>
         <div class="form-item">
@@ -87,7 +88,7 @@
     </div>
       <div class="checkboxes">
         <label class="label" for="checkboxes">I accept the terms and conditions</label>
-        <input type="checkbox" id="checkboxes" name="" value="">
+        <input type="checkbox" id="checkboxes" name=""  required value="Accepted terms and conditions">
       </div>
       </div>
       <div class="submit-button">
@@ -95,6 +96,14 @@
       </div>
     </form>
   </main>
+  <footer>
+    <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+      <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+      <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+    </a>
+    <h5>Made By MARK HEIJNEKAMP</h1>
+  </footer>
 </body>
 
 </html>
